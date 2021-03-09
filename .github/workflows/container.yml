@@ -10,7 +10,7 @@ jobs:
         ports:
           - 3001:3000
       mongo:
-        image: mango
+        image: mongo
         ports:
           - "27017:27017"
     steps:
