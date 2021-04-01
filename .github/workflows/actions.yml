@@ -10,7 +10,8 @@ jobs:
         run: |
           pwd
           ls
-          npm install -g apigeelint
+          npm install apigeelint
+          cd `npm root`
           apigeelint -h
       - name: Checkout
         uses: actions/checkout@v2
