@@ -11,7 +11,8 @@ jobs:
           pwd
           ls
           npm install apigeelint
-          npm root
+          cd `npm root`
+          ls
       - name: Checkout
         uses: actions/checkout@v2
       - name: list files after Checkout
