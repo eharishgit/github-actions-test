@@ -11,12 +11,14 @@ jobs:
           pwd
           ls
           npm install apigeelint
+          npm root
       - name: Checkout
         uses: actions/checkout@v2
       - name: list files after Checkout
         run: |
           pwd
           ls -la
+          npm root
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
