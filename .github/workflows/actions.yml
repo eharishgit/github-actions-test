@@ -12,7 +12,7 @@ jobs:
           ls
           npm install apigeelint
           cd `npm root`
-          ls-lrt
+          ls -lrt
       - name: Checkout
         uses: actions/checkout@v2
       - name: list files after Checkout
