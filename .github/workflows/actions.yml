@@ -14,7 +14,12 @@ jobs:
           echo `npm root`
           cd `npm root`
           pwd
-          ls -lrt          
+          ls -lrt  
+      - name: Dump GitHub context
+        env: 
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |   
+          echo "$GITHUB_CONTEXT"
       - name: Checkout
         uses: actions/checkout@v2
       - name: list files after Checkout
